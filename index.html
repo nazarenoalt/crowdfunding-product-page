@@ -15,10 +15,24 @@
   <header class="header">
     <div class="header-bar">
       <img class="logo" src="images/logo.svg" alt="logo">
-      <img class="menu" src="images/icon-hamburger.svg" alt="menu">
+      <img class="menu-icon" id="menu_icon" src="images/icon-hamburger.svg" alt="menu">
     </div>
   </header>
 
+  <!--Menu-->
+  <div class="menu-container" id="menu_container">
+    <ul>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <a href="#">Discover</a>
+      </li>
+      <li>
+        <a href="#">Get Started</a>
+      </li>
+    </ul>
+  </div>
   <section class="container">
     <!--Product Card-->
 
@@ -123,10 +137,10 @@
         <h2 class="main-title">Back this project</h2>
 
         <p class="description"> Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?</p>
-        <div class="card">
+        <div class="back-product card">
           <div class="radio-title-container">
             <label>
-              <input type="radio" name="product">
+              <input type="radio" class="back-product radio"  name="product">
               <i></i>
             </label>
             <div class="title-pledge-container">
@@ -140,10 +154,10 @@
           </p>
         </div> 
 
-        <div class="card">
+        <div class="back-product card">
           <div class="radio-title-container">
             <label>
-              <input type="radio" name="product">
+              <input type="radio" class="back-product radio"  name="product">
               <i></i>
             </label>
             
@@ -164,10 +178,10 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="back-product card">
           <div class="radio-title-container">
             <label>
-              <input type="radio" name="product">
+              <input type="radio" class="back-product radio"  name="product">
               <i></i>
             </label>
             
@@ -188,10 +202,10 @@
           
         </div>
 
-        <div class="card disabled">
+        <div class="back-product card disabled">
           <div class="radio-title-container">
             <label>
-              <input type="radio" name="product" disabled>
+              <input type="radio" class="back-product radio"   name="product" disabled>
               <i></i>
             </label>
 
@@ -215,7 +229,7 @@
     </div>
 
     <!--Background for windows-->
-    <div class="background"> </div>
+    <div class="background" id="background"> </div>
   </section>
   
   <!-- Selected pledge start -->
@@ -271,5 +285,8 @@
  
 
   <!-- Success modal end -->
+
+  <script type="text/javascript" src="js/checking.js"></script>
+  <script type="text/javascript" src="js/menu.js"></script>
 </body>
 </html>
