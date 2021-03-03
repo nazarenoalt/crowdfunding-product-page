@@ -76,7 +76,7 @@ body {
     justify-content: center;
     position: relative;
     background: white;
-    margin: 25px;
+    margin: 25px auto;
     padding: 10px;
     border-radius: 10px;
     border: 1px solid var(--light-gray);
@@ -221,6 +221,15 @@ font-size: 1.3rem;
     margin-bottom: 5%;
 }
 
+.card.back-product {
+    transition: border .1s;
+    box-sizing:unset;
+}
+
+.card.active {
+    border: 2px solid var(--moderate-cyan);
+}
+
 .disabled {
     filter: grayscale(100%);
     opacity: 50%;
@@ -231,6 +240,8 @@ font-size: 1.3rem;
     display: none;
     position: absolute;
     top: 120px;
+    right: 0;
+    left: 0;
     z-index: 101;
 }
 
