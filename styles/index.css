@@ -3,6 +3,7 @@
 body {
     background: var(--cream);
 }
+
 /*Header*/
 .header {
     width: 100%;
@@ -23,13 +24,13 @@ body {
     left: 0px; 
     right: 0px;
     margin: auto; 
-    
-      
 }
+
 .logo {
     width: 150px;
     object-fit:contain;
 }
+
 .menu {
     width: 20px;
     object-fit:contain;
@@ -102,18 +103,22 @@ body {
     border: none;
     outline: none;
 }
-
+.card.product .button {
+    margin-bottom: 0;
+}
 .number {
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
     margin: 30px 0px 15px;
 }
+
 .card.tracking .description {
     width: initial;
     text-align: center;
     margin-bottom: 15px;
 }
+
 .card.tracking li:nth-child(1),
 .card.tracking li:nth-child(2) {
     border-bottom: 1px solid var(--light-gray);
@@ -123,9 +128,11 @@ body {
     width: 90%;
     height: 30px;
 }
+
 .progress-bar::-webkit-meter-bar {
     border: none;
 }
+
 .progress-bar::-webkit-meter-optimum-value {
     background: var(--moderate-cyan);
 }
@@ -141,22 +148,26 @@ font-size: 1.3rem;
     font-size: 1rem;
     margin: 15px 0;
 }
+
 .radio-title-container {
     display: flex;
     justify-content: start;
     align-items: center;
     width: 90%;
 }
+
 .title-pledge-container {
     display: inline-block;
     width: 200%;
 
 }
+
 .pledge {
     color: var(--moderate-cyan);
     font-weight: bold;
     margin-bottom: 30px;
 }
+
 .stock {
     display: flex;
     align-items: center;
@@ -165,19 +176,23 @@ font-size: 1.3rem;
     height: 40px;
     margin-bottom: 30px;
 }
+
 .stock .number {
     margin: 0;
 }
+
 .stock .desc {
     display: inline-block;
     margin-left: 10px;
     color: var(--dark-gray)
 }
+
 .card .button {
     align-self: start;
     margin-left: 4.7%;
     margin-bottom: 5%;
 }
+
 .disabled {
     filter: grayscale(100%);
     opacity: 50%;
@@ -185,12 +200,14 @@ font-size: 1.3rem;
 
 /*Back Project*/
 .card.back-project {
+    display: none;
     position: absolute;
     top: 120px;
     z-index: 101;
 }
 
 .background {
+    display: none;
     position: fixed;
     z-index: 100;
     content: "";
