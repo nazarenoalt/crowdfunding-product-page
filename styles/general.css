@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Primary*/
+    --moderate-cyan: #3cb4ac;
+    --light-cyan: #d5fffc;
+    --dark-cyan: #147b74;
+    /*Neutral*/
+    --black: #000000;
+    --light-gray: #dadada;
+    --dark-gray: #7a7a7a;
+    --cream: #f0ede7;
+    font-family: 'Commissioner', Arial, Helvetica, sans-serif;
+}
+img {
+    max-width: 100%;
+}
+
+p {
+    width: 90%;
+}
+
+h1, h2, h3 {
+    width: 90%;
+}
+
+label {
+    display: inline-block;
+    position: relative;
+    padding: 0 30px;
+    height: 30px;
+}
+input[type=radio] {
+    appearance: none;
+    visibility: hidden;
+}
+label input[type=radio] + i {
+    position: absolute;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    left: 15px;
+    border: 1px solid var(--light-gray);
+    transition: all .2s ease;
+}
+
+label input[type=radio] + i:before {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: var(--moderate-cyan);
+    position: absolute;
+    border-radius: 100%;
+    z-index: 1;
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+    transition: all .25s ease;
+}
+label input[type=radio]:checked + i:before {
+    transform: scale(1);
+    opacity: 1;
+}

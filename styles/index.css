@@ -1,0 +1,203 @@
+@import 'general.css';
+
+body {
+    background: var(--cream);
+}
+/*Header*/
+.header {
+    width: 100%;
+    height: 300px;
+  /*   background-color: linear-gradient(0deg, transparent, rgba(14,14,14,1) 100%); */
+    background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, transparent 60%),
+    url('../images/image-hero-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-bar {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    width: 90%;
+    top: 35px;
+    left: 0px; 
+    right: 0px;
+    margin: auto; 
+    
+      
+}
+.logo {
+    width: 150px;
+    object-fit:contain;
+}
+.menu {
+    width: 20px;
+    object-fit:contain;
+}
+
+/*Container*/
+.container {
+    margin-top: -100px;
+}
+
+/*Card*/
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background: white;
+    margin: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--light-gray);
+    z-index: 20;
+    align-items: center;
+    width: 90%;
+}
+
+/*Product Card*/
+.card.product {
+    text-align: center;
+}
+
+.mastercraft-logo {
+    margin-top:-38px;
+    margin-bottom: 30px;
+    width: 64px;
+}
+
+.product-title {
+    font-size: 1.5rem;
+    width: 70%;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.description {
+    color:var(--dark-gray);
+    line-height: 1.8;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.sub-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.bookmark {
+    width: 57px;
+}
+
+.button {
+    color: white;
+    font-weight: bold;
+    background-color: var(--moderate-cyan);
+    padding: 20px 40px;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+}
+
+.number {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px 0px 15px;
+}
+.card.tracking .description {
+    width: initial;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.card.tracking li:nth-child(1),
+.card.tracking li:nth-child(2) {
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.progress-bar {
+    width: 90%;
+    height: 30px;
+}
+.progress-bar::-webkit-meter-bar {
+    border: none;
+}
+.progress-bar::-webkit-meter-optimum-value {
+    background: var(--moderate-cyan);
+}
+
+/*About Section*/
+.main-title {
+font-size: 1.3rem;
+    margin: 30px 0;
+}
+
+/*Product Selection*/
+.card-title {
+    font-size: 1rem;
+    margin: 15px 0;
+}
+.radio-title-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 90%;
+}
+.title-pledge-container {
+    display: inline-block;
+    width: 200%;
+
+}
+.pledge {
+    color: var(--moderate-cyan);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.stock {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    height: 40px;
+    margin-bottom: 30px;
+}
+.stock .number {
+    margin: 0;
+}
+.stock .desc {
+    display: inline-block;
+    margin-left: 10px;
+    color: var(--dark-gray)
+}
+.card .button {
+    align-self: start;
+    margin-left: 4.7%;
+    margin-bottom: 5%;
+}
+.disabled {
+    filter: grayscale(100%);
+    opacity: 50%;
+}
+
+/*Back Project*/
+.card.back-project {
+    position: absolute;
+    top: 120px;
+    z-index: 101;
+}
+
+.background {
+    position: fixed;
+    z-index: 100;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: black;
+    opacity: 50%;
+}
