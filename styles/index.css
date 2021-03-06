@@ -252,7 +252,7 @@ font-size: 1.3rem;
 }
 
 .background {
-    display: block;
+    display: none;
     position: fixed;
     z-index: 100;
     content: "";
