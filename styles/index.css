@@ -276,8 +276,11 @@ font-size: 1.3rem;
     width: 100%;
     border-top: 1px solid var(--light-gray);
     flex-wrap: wrap;
+    padding: 10px
 }
-
+.enter-pledge.no-reward {
+    padding-top: 30px;
+}
 .enter-pledge .description {
     width: 100%;
     text-align: center;

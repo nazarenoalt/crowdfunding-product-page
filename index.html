@@ -42,7 +42,7 @@
       <p class="description">A beautiful & handcrafted monitor stand to reduce neck and eye strain.</p>
       <div class="sub-container">
         <button class="button" onclick="displayBlock(back_project)">Back this project</button>
-          <img class="bookmark" src="images/icon-bookmark.svg" alt="bookmark">
+          <img class="bookmark" id="bookmark" src="images/icon-bookmark.svg" alt="bookmark" data-checked='false' onclick="checkBookmark()">
       </div>
       
     </div>
@@ -242,11 +242,18 @@
     </div>
     
     <!--Background for windows-->
-    <div class="background" id="background"> </div>
+    <div class="background" id="background" onclick="hideActiveSection()"> </div>
   </section>
   <script type="module" src="./js/enter-pledge.js"></script>
   <script type="module" src="./js/checking.js"></script>
   <script type="text/javascript" src="./js/menu.js"></script>
   <script type="text/javascript" src="./js/buttons.js"></script>
+  <script type="text/javascript" src="./js/hide-active-section.js"></script>
 </body>
 </html>
+
+<!--
+  Troubles to solve:
+    - the bookmark must can be marked
+    - make menu
+-->
