@@ -42,6 +42,7 @@ body {
     position: fixed;
     z-index: 102;
     width: 90%;
+    max-width: 450px;
     height: auto;
     background: white;
     top: 150px;
@@ -88,8 +89,24 @@ body {
     z-index: 20;
     align-items: center;
     width: 90%;
+    max-width: 750px;
 }
 
+.card.option .title-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.select-reward-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: start;
+}
+.card.option .button {
+    margin-left: 0;
+}
 /*Product Card*/
 .card.product {
     text-align: center;
@@ -110,6 +127,7 @@ body {
 
 .description {
     color:var(--dark-gray);
+    
     line-height: 1.8;
     width: 90%;
     margin-bottom: 30px;
@@ -303,6 +321,7 @@ font-size: 1.3rem;
 .successful-back {
     position: fixed;
     width: 90%;
+    max-width: 500px;
     top: 150px;
     right: 0;
     left: 0;
@@ -331,13 +350,22 @@ font-size: 1.3rem;
 } */
 
 .success-icon {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
-.successful-back h2 {
-    margin-bottom: 15px;
+.successful-back .title {
+    margin: 0px auto 25px
 }
 
+.successful-back .description {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.successful-back .button {
+    margin: 30px 0 10px;
+    padding: 10px 25px;
+}
 .active-section.active-section {
     display: block;
 }
@@ -351,9 +379,29 @@ font-size: 1.3rem;
         url('../images/image-hero-desktop.jpg');
         background-position-x: -250px;
     }
+
+    .card.option .title-container {
+        justify-content: space-between;
+        align-items: baseline;
+        flex-direction: row;
+    }
+
+    .title-container .pledge {
+        text-align: right;
+    }
+
+    .select-reward-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .stock {
+        width: 200px;
+    }
 }
 
 @media screen and (min-width: 1140px) {
+    
     .header {
         background-position-x: 0px
     }
