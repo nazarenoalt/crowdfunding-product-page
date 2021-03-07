@@ -341,3 +341,22 @@ font-size: 1.3rem;
 .active-section.active-section {
     display: block;
 }
+
+@media screen and (min-width: 500px) {
+    .header { background-position-y: -100px; }
+}
+@media screen and (min-width: 768px) {
+    .header {
+        background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, transparent 60%),
+        url('../images/image-hero-desktop.jpg');
+        background-position-x: -250px;
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .header {
+        background-position-x: 0px
+    }
+}
+/* background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, transparent 60%),
+        url('../images/image-hero-mobile.jpg'); */
