@@ -300,14 +300,15 @@ font-size: 1.3rem;
     padding-top: 30px;
 }
 .enter-pledge .description {
-    width: 100%;
     text-align: center;
 }
-
+.enter-pledge .button {
+    padding: 20px 30px
+}
 .pledge-input {
     border: 1px solid var(--light-gray);
     border-radius: 100px;
-    width: 120px;
+    width: 100px;
     height: 57px;
     outline: none;
     padding: 15px;
@@ -372,6 +373,14 @@ font-size: 1.3rem;
 
 @media screen and (min-width: 500px) {
     .header { background-position-y: -100px; }
+
+    .enter-pledge {
+        align-items: baseline;
+    }
+    .enter-pledge .description {
+        width: 40%;
+        text-align: left;
+    }
 }
 @media screen and (min-width: 768px) {
     .header {
@@ -386,10 +395,16 @@ font-size: 1.3rem;
         flex-direction: row;
     }
 
+    .enter-pledge {
+        height: 100px;
+        padding-top: 20px;
+    }
     .title-container .pledge {
         text-align: right;
     }
-
+    .pledge-input {
+        margin-left: 10%;
+    }
     .select-reward-container {
         flex-direction: row;
         justify-content: space-between;
@@ -397,14 +412,18 @@ font-size: 1.3rem;
     }
     .stock {
         width: 200px;
+        align-self: start;
+        margin-left: 5%;
     }
 }
-
+@media screen and (min-width: 820px) {
+    .pledge-input {
+        margin-left: 20%;
+    }
+}
 @media screen and (min-width: 1140px) {
     
     .header {
         background-position-x: 0px
     }
 }
-/* background: linear-gradient(rgba(0, 0, 0, 0.7) 0%, transparent 60%),
-        url('../images/image-hero-mobile.jpg'); */
