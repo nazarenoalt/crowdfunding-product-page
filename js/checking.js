@@ -2,7 +2,6 @@ import { createPledgeElement } from './enter-pledge.js';
 
 const radioList = document.querySelectorAll('.back-product.radio')
 const cardList = document.querySelectorAll('.back-product.card')
-
 for(let i = 0; i < cardList.length; i++) {
     cardList[i].addEventListener('click', function(event) {
         const lastActive = document.querySelector('.card.active');
