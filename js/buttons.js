@@ -9,11 +9,6 @@ const displayNone = (element) => {
     element.classList.remove('active-section')
 }
 
-const displaySuccessfulBacking = (element) => {
-    element.classList.add('active-section')
-    back_project.classList.remove('active-section');
-}
-
 const displayBlock = (element) => {
     element.classList.add('active-section')
     background.style.display = 'block';
