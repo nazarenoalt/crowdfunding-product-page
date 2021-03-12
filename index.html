@@ -52,8 +52,8 @@
     <div class="card tracking">
       <ul>
         <li>
-          <p class="number">$89,914</p>
-          <p class="description">of $100,000 backed</p>
+          <p class="number" id="progress_label"></p>
+          <p class="description" id="target_label" ></p>
         </li>
         <li>
           <p class="number">5,007</p>
@@ -64,7 +64,7 @@
           <p class="description">days left</p>
         </li>
       </ul>
-      <meter class="progress-bar" min="0", max="100" value="89"></meter>
+      <meter class="progress-bar" min="0", max="100" value="89" id="progress_bar"></meter>
     </div>
 
     <!--About Card-->
@@ -265,10 +265,15 @@
   <script type="text/javascript" src="./js/menu.js"></script>
   <script type="text/javascript" src="./js/buttons.js"></script>
   <script type="text/javascript" src="./js/hide-active-section.js"></script>
+  <script type="text/javascript" src="./js/backers.js"></script>
 </body>
 </html>
 
 <!--
-  Troubles to solve:
-    - make menu
+- View the optimal layout depending on their device's screen size [X]
+- See hover states for interactive elements
+- Make a selection of which pledge to make
+- See an updated progress bar and total money raised based on their pledge total after confirming a pledge
+- See the number of total backers increment by one after confirming a pledge
+- Toggle whether or not the product is bookmarked
 -->
