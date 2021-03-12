@@ -26,9 +26,10 @@ export function createPledgeElement(card) {
     }
 
     const buttonEl = document.createElement('button');
-    buttonEl.classList.add('button');
+    buttonEl.className = 'button back-button';
+    buttonEl.setAttribute('id', 'back_button')
     const textButton = document.createTextNode('Continue');
-    buttonEl.setAttribute('onclick', 'inputPledge();')
+    buttonEl.setAttribute('onclick', 'inputPledge();reduceStock();')
     buttonEl.append(textButton);
 
     !card.classList.contains('no-reward')

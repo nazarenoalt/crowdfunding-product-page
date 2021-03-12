@@ -1,3 +1,4 @@
+//statistics variables
 const target = 100000;
 let progress = 89914;
 let backers = 5007;
