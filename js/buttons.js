@@ -1,4 +1,6 @@
-const success_button = document.querySelector('#success_button')
+
+
+const success_button = document.querySelector('#success_button');
 const successful_back = document.querySelector('#successful_back')
 const back_project = document.querySelector('.card.back-project');
 
@@ -7,7 +9,7 @@ const displayNone = (element) => {
     element.classList.remove('active-section')
 }
 
-const displayBackProject = (element) => {
+const displaySuccessfulBacking = (element) => {
     element.classList.add('active-section')
     back_project.classList.remove('active-section');
 }
@@ -29,3 +31,5 @@ const checkBookmark = () => {
 
     }
 }
+
+//Continue Button from Back Project
