@@ -27,5 +27,6 @@ const inputPledge = () => {
         backers++
         backers_label.innerHTML = backers;
         progress_label.innerHTML = formatCurrency("en-US","USD",2,progress)
+        progress_bar.value = progress;
     }
 }
