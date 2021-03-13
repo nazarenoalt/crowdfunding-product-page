@@ -2,6 +2,7 @@
 
 body {
     background: var(--cream);
+    padding-bottom: 300px;
 }
 
 /*Header*/
@@ -337,18 +338,6 @@ font-size: 1.3rem;
     border-radius: 7px;
     background: white;
 }
-/* .successful-back:before {
-    display: block;
-    position: fixed;
-    z-index: 105;
-    content: "";
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: black;
-    opacity: 50%;
-} */
 
 .success-icon {
     margin-bottom: 25px;
@@ -395,21 +384,43 @@ font-size: 1.3rem;
         flex-direction: row;
     }
 
+    .card.tracking ul {
+        display: grid;
+        width: 90%;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+
+    .card.tracking li p {
+        width: 100%;
+    }
+
+    .card.tracking li:nth-child(1),
+    .card.tracking li:nth-child(2) {
+        border: none;
+        width: 100%;
+        border-right: 1px solid var(--light-gray);
+    }
+
     .enter-pledge {
         height: 100px;
         padding-top: 20px;
     }
+
     .title-container .pledge {
         text-align: right;
     }
+
     .pledge-input {
         margin-left: 10%;
     }
+    
     .select-reward-container {
         flex-direction: row;
         justify-content: space-between;
         align-items: baseline;
     }
+
     .stock {
         width: 200px;
         align-self: start;
