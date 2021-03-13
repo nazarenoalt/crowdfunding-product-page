@@ -23,19 +23,20 @@ progress_bar.value = progress;
 //[function] Entering pledge into the total pledged value
 const inputPledge = () => {
     const pledge_input = document.querySelector('.pledge-input');
-
-    if(pledge_input && pledge_input.value > 0 ) {
-        progress += parseInt(pledge_input.value);
+    if(pledge_input !== null) {
+        if(pledge_input.value > 0 ) {
+            progress += parseInt(pledge_input.value);
+            backers++
+            backers_label.innerHTML = backers;
+            progress_label.innerHTML = formatCurrency("en-US","USD",2,progress)
+            progress_bar.value = progress;
+            displaySuccessfulBacking(successful_back)
+        } if(pledge_input.value <= 0) {
+            alert('The inserted number is invalid');
+        } 
+    } else if(pledge_input === null) {
         backers++
-        backers_label.innerHTML = backers;
-        progress_label.innerHTML = formatCurrency("en-US","USD",2,progress)
-        progress_bar.value = progress;
         displaySuccessfulBacking(successful_back)
-    } if(pledge_input.value <= 0) {
-        alert('El numero insertado es invalido');
-    } if(!pledge_input) {
-
-        backers++
     }
 }
 

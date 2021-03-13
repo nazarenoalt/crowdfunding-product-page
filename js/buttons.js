@@ -1,5 +1,3 @@
-
-
 const success_button = document.querySelector('#success_button');
 const successful_back = document.querySelector('#successful_back')
 const back_project = document.querySelector('.card.back-project');
